@@ -1,5 +1,6 @@
 const express = require('express')
 const session = require ( 'express-session' )
+const path = require('path')
 const app = express()
 
 app.use(session({
@@ -9,9 +10,7 @@ app.use(session({
 }))
 app.set('port',process.env.PORT || 3000)
 
-app.get('/', function(req, res) {
-    res.send('hello world');
-  });
+
 
 const server = app.listen(app.get('port'),() => {
 
@@ -64,6 +63,23 @@ io.on('connection', (socket) => {
         
     });
 
+    socket.on('notificar',(data) =>
+    {
+        const user = usuarios.find( user => user.name === data.to);
+       console.log("esto es data"+data.me)
+        usuarios.forEach(x =>
+            {
+               
+                if(x.name == data.me)
+                {
+                    x.notificacion += 1
+                }
+               
+              
+            });
+        io.to(user.idSocket).emit('activos',usuarios)
+        usuarios.forEach(element => console.log(element))
+    })
    
     // ESCUCHANDO MENSAJES NUEVOS Y ENVIANDO A LOS CLIENTES RESPECTIVOS Y/O GRUPOS
     socket.on('message' , (data) => 

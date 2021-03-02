@@ -39,6 +39,7 @@ soket.on('activos',function(data) {
         activos = JSON.parse(sessionStorage.getItem("activos"))// seteando array de la session de usuarios(ON)
         ul_activos.innerHTML="";
 
+
         for (var i = 0; i < data.length; i++) 
         {
             if(sessionStorage.getItem("user") != data[i].name){
@@ -61,6 +62,7 @@ soket.on('activos',function(data) {
         
      
         }
+        
         
     }
     
@@ -108,6 +110,7 @@ ul_activos.onclick = function(event) {
     chat.innerHTML = ""
     containerChat.style.visibility = "visible"
     validarChatPrivado();
+
 };
 
 // DESCONECTAR SOCKET DE LADO DEL CLIENTE Y ELIMINANDO SESSION DEL USUARIO CONECTADO
@@ -148,8 +151,13 @@ btnSendMessage.addEventListener('click', function() {
         to: destinatario.innerHTML, 
         me: sessionStorage.getItem("user")
     }
+    let notificar = { 
+        
+        to: destinatario.innerHTML, 
+        me: sessionStorage.getItem("user")
+    }
     soket.emit('message',message)//enviando nuevo mensaje 
-
+    soket.emit('notificar',notificar)
 })
 
 function getMessages(data)

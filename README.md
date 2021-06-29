@@ -14,4 +14,5 @@ El proyecto esta divido en 2 carpetas llamadas cliente y servidor en donde el cl
 - Html5
 - css
 - javaScript
-<img src="https://imgflip.com/gif/5evp0j" alt="" data-canonical-src="https://imgflip.com/gif/5evp0j" style="max-width:100%;">
+
+<iframe width="360" height="137" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/5evpn5"></iframe></div><p><a href="https://imgflip.com/gif/5evpn5">via Imgflip</a>

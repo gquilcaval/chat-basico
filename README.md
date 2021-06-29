@@ -14,3 +14,4 @@ El proyecto esta divido en 2 carpetas llamadas cliente y servidor en donde el cl
 - Html5
 - css
 - javaScript
+-  <img src="https://camo.githubusercontent.com/2087197b483340f3c06328b7a4158ba07e399302886eeeca344e90b3e597717a/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f343033373130352d653331373637373933353939333831372e6769663f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970" alt="" data-canonical-src="http://upload-images.jianshu.io/upload_images/4037105-e317677935993817.gif?imageMogr2/auto-orient/strip" style="max-width:100%;">

@@ -15,4 +15,5 @@ El proyecto esta divido en 2 carpetas llamadas cliente y servidor en donde el cl
 - css
 - javaScript
 
-<img src="/output/6/2/622e467a30eedf750353a08c6cbb2948.gif?1624956500" width="" height="">
+![5f3mt9](https://user-images.githubusercontent.com/35823155/124069602-101c1e00-da02-11eb-9ff0-b9d77937a5ad.gif)
+
